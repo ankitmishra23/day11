@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {FormsModule,ReactiveFormsModule, FormGroup, FormBuilder, Validators} from '@angular/forms';
-import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-createproduct',
@@ -11,7 +10,7 @@ export class CreateproductComponent implements OnInit {
 createproduct:FormGroup;
 submitform=false;
 details:Array<any>;
-  constructor(private pro:FormBuilder,private route:ActivatedRoute) {
+  constructor(private pro:FormBuilder) {
     this.ngOnInit();
    }
 
