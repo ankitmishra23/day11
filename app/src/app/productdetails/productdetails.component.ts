@@ -20,9 +20,6 @@ export class ProductdetailsComponent implements OnInit {
     this.productdetail=JSON.parse(window.localStorage.getItem(doc));
     console.log(this.productdetail);    
   }
-  deleteproduct(index:number)
-  {
-this.productdetail.splice(index,1);
-  }
+  
 
 }
